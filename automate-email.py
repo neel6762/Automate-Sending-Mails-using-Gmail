@@ -37,7 +37,10 @@ time.sleep(3)
 browser.find_element_by_name('subjectbox').send_keys(emailSub)
 browser.implicitly_wait(10)
 
+# Wrinting the main message and submit -----
 browser.find_element_by_class_name('editable').send_keys(emailBody)
 time.sleep(5)
 browser.find_element_by_class_name('gU').click()
+
+browser.exit()
 print('Message Send ! Cheers')
