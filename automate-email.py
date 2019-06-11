@@ -8,7 +8,8 @@ emailTo = input("Recipient's Email Address:")
 emailSub = input('Enter the subject of the mail:')
 emailBody = input("Type in the message you want to send:")
 # Opening the WebBrowser
-browser = webdriver.Chrome(r'C:\Users\ONEST\AppData\Local\Programs\Python\Python36-32\selenium\webdriver\chromedriver_win32\chromedriver.exe')
+path = 'path to the chrome driver'
+browser = webdriver.Chrome(path)
 url = 'https://www.google.com/gmail/'
 browser.get(url)
 
